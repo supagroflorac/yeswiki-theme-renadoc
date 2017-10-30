@@ -1,0 +1,144 @@
+/* 
+Structure html :
+
+--> id conteneur (class gauche ou droite ou milieu)
+
+----> id header
+------> id menu_commun_haut
+--------> id recherche
+--------> id pagerapidehaut
+------> id titre
+------> id menu_haut
+------> id banniere
+----> id col_menu
+----> id col_droite (que pour class milieu)
+----> id content
+----> id footer
+------> id copyright
+
+Couleurs utilisées : 
+#1A667F : bleu (header, titre1, footer)
+#9c6000 : marron clair (liens, titre5)
+#F29400 : orange vif (titre2, titre4)
+#BBC16B : vert olive (fond conteneur)
+*/
+
+
+/* CSS specifique au template */
+
+body {
+	font-family: Arial;
+	font-size: 14px;
+	margin: 0px;
+	pading: 0px;	
+}
+
+* { 
+	margin: 0px;
+	pading: 0px;
+}
+	
+#conteneur {
+	margin: 0px auto;
+	background: #b6e0f6 top left url(../images/entete.jpg) no-repeat;
+	width: 900px;
+	border-left: 1px solid white;	
+}
+
+#corps {
+	padding-top: 200px;
+	min-height: 500px;
+	overflow: auto;
+	border-left: 1px solid white;
+}
+
+#menu {
+	width: 217px;
+	background: #ff9900 top left url(../images/menu_entete.jpg) no-repeat;
+	margin-left: 20px;
+	padding: 10px;
+	padding-top: 20px;
+	padding-bottom: 0px;
+	float: left;
+	overflow: hidden;	
+}
+
+#menu_piedpage {
+	width: 237px;
+	height: 32px;
+	background: url(../images/menu_piedpage.jpg) no-repeat top left;
+	margin-left: -10px;	
+}
+
+#page {
+	width: 580px;
+	float: right;
+	display: block;
+	margin-right: 30px;
+	padding-bottom: 20px;
+	overflow: auto;
+}
+
+#menu ul{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;		
+}
+
+#menu ul li{	
+	background: url(../images/fleche.png) no-repeat top left;
+	padding-left: 20px;
+}
+
+#menu a {
+	text-decoration: none;	
+}
+
+#piedPage {
+	background: url(../images/piedPage.jpg) top left no-repeat;
+	width: 100%;
+	height: 54px;
+	font-size: 90%;
+	text-align: center;	
+	
+}
+
+#barreAction {
+	
+}
+	
+.hr_clear { display: none;}	
+
+/* Inclusion de page */
+.include_right { float: right; width: 17%; } /* bloc flotant a  droite */
+.include_left { float: left; width: 17%; } /* bloc flotant  a gauche */
+.include_solid_border { border: solid; padding: 2px; } /* encadre noir */
+.include_gray_background { background-color: #DDDDDD; } /* fond gris */
+.include_small_fonts { font-size: 0.8em; } /* petites polices */
+.include_big_fonts { font-size: 1.2em; } /* grandes polices */
+.include_height10em { height: 10em; overflow: scroll; } /* boite de 10em de hauteur, avec ascenseur */
+.include_height15em { height: 15em; overflow: scroll; }
+.include_height30em { height: 30em; overflow: scroll; }
+.include_height60em { height: 60em; overflow: scroll; }
+.include_editlink { float: right; } /* bloc flotant a droite */
+.include_editlink { display:none; } /* Inhibe l'affichage du bloc "include_editlink" */
+.include:hover .include_editlink { display: block; } /* Au passage de la souris sur le bloc "include", affiche le bloc "include_editlink" */
+/* fin inclusion de page */
+
+
+/* fichiers attachés */
+.attach_left { 
+float:left; 
+margin:0 10px 0 0; 
+} 
+.attach_right { 
+float:right; 
+margin:0 0 0 10px; 
+}  
+.attach_center { 
+display:block; 
+width:100%; 
+text-align:center; 
+margin:0 auto; 
+} 
+/* fin fichiers attachés */
